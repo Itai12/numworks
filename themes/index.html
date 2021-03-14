@@ -1,3 +1,40 @@
+<!DOCTYPE html>
 <html>
-  
+  <head>
+    <link rel="stylesheet" type="text/css" href="sakura.css" />
+    <title>Themes installer (without compiling)</title>
+    <style>
+      p.warning {
+        color: red;
+      }
+      p.error {
+        color: red;
+        font-weight: bold;
+      }
+      label.radio {
+        display: inline;
+      }
+      input:invalid {
+        color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="text-align: center;font-size: larger;">
+      Choose your NumWorks model:<br/><a href="n0100/"><b>N0100</b></a> or <a href="n0110/"><b>N0110</b></a>.
+    </p>
+    <br/>
+    <footer>
+      <hr>
+      <p>WebUSB is currently only supported by Chromium / Google Chrome.</p>
+      <p>For Chrome to communicate with a USB device, it must have permission to access the device and the operating system must be able to load a generic driver that libusb can talk to.</p>
+      <p>
+        <ul>
+          <li>On Windows, that means that an appropriate WinUSB/libusb driver must first be installed. This can be done manually with programs such as <a href="https://zadig.akeo.ie/">Zadig</a>.</li>
+          <li>On Linux, that means that the current user must have permission to access the device.</li>
+          <li>On macOS and ChromeBooks, it should work directly.</li>
+        </ul>
+      </p>
+    </footer>
+  </body>
 </html>
